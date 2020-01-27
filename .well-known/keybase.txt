@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jonathanboom
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://intuitivesoup.com
+  * I am jonathanboom (https://keybase.io/jonathanboom) on keybase.
+  * I have a public key ASDtfi1tltOsNyqBAYCeH5WiigoFtOFt5gok7DcadfpKgQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f0760ba478bbcf23c8f25e8d52768376ca9b67d047996fa6c6106166c3d2ec8f0a",
+      "host": "keybase.io",
+      "kid": "0120ed7e2d6d96d3ac372a8101809e1f95a28a0a05b4e16de60a24ec371a75fa4a810a",
+      "uid": "30dab23acad6504586541a4edecbe819",
+      "username": "jonathanboom"
+    },
+    "merkle_root": {
+      "ctime": 1580135667,
+      "hash": "f7a4798bbbd3d0519e6bea20ca4c031f8795f5b591c026e13d7344e0329a75590e4240203fadb130a81b771495698c362c443bc6f113cb7b1b5d7151557f520a",
+      "hash_meta": "08dbb5d66b6f02a22f48d478ccbc178da1dbb06e071a292b770aea1909a95a6e",
+      "seqno": 14380765
+    },
+    "service": {
+      "entropy": "MpdM+cxenRdAkx09808cHsPo",
+      "hostname": "intuitivesoup.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1580135674,
+  "expire_in": 504576000,
+  "prev": "f01541a3a95da51d4c0ffea780bdc5e3a4d09dcd93ef6a620523b4e33aa29dc7",
+  "seqno": 21,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg7X4tbZbTrDcqgQGAnh+VoooKBbThbeYKJOw3GnX6SoEKp3BheWxvYWTESpcCFcQg8BVBo6ldpR1MD/6ngL3F46TQnc2T72piBSO04zqincfEIAjRXZ5fbkBlU4scOkZDHvKqsm2b1KPOvJ6IJwMMI1pXAgHCo3NpZ8RAZB90vOdaBIYVtvZ+DdkDTffte9WTQMMT/IXHdatW0Oe9m09gVgiY3ajSOjJOpkzMgcSH906H6s4W0puJi1wnAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIO7zWT55g9G0igHIu9K+aQvQWtQt5GaQ00N0fzS3TbzWo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jonathanboom
+
+==================================================================
