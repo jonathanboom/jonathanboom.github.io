@@ -6,50 +6,77 @@
 		<link rel="stylesheet" href="./screen.css" type="text/css" media="screen" />
 		<link rel="icon" href="./favicon-32.png" sizes="32x32" />
 		<script type="text/javascript">
-			function changeBigImage (number) {
+			function changeBigImage(number, isIOS) {
+				var selectIdPrefix = isIOS ? 'gallery-ios-select-' : 'gallery-select-';
+				var fullIdPrefix = isIOS ? 'gallery-ios-' : 'gallery-';
 				for (i = 1; i <= 3; i++) {
-					document.getElementById("gallery-select-"+i).style.padding = "6px";
-					document.getElementById("gallery-select-"+i).style.border = "0";
-					document.getElementById("gallery-"+i).style.display = "none";
+					document.getElementById(selectIdPrefix + i).style.padding = '6px';
+					document.getElementById(selectIdPrefix + i).style.border = '0';
+					document.getElementById(fullIdPrefix + i).style.display = 'none';
 				}
-				document.getElementById("gallery-select-"+number).style.padding = "0";
-				document.getElementById("gallery-select-"+number).style.border = "6px #268bd2 solid";
-				document.getElementById("gallery-"+number).style.display = "inline";
+				document.getElementById(selectIdPrefix + number).style.padding = '0';
+				document.getElementById(selectIdPrefix + number).style.border = '6px #268bd2 solid';
+				document.getElementById(fullIdPrefix + number).style.display = 'inline';
 			}
 		</script>
 	</head>
+
 	<body>
 		<h1>StarTych</h1>
 		<h2>by Intuitive Soup</h2>
 		<div id="support-links">
 			<p>
-				Available now for macOS Mojave and Catalina on the <a href="http://itunes.apple.com/us/app/startych/id454643168?ls=1&amp;mt=12">App Store</a>.
+				Available now for iOS 13 on the
+				<a href="https://apps.apple.com/us/app/startych-photo-border-tool/id1497631545?ls=1">App Store</a>
+				and for macOS Mojave and Catalina on the
+				<a href="http://itunes.apple.com/us/app/startych/id454643168?ls=1&amp;mt=12">Mac App Store</a>.
 			</p>
 			<p>
 				Email <script type="text/javascript">document.write(
 	"<n uers=\"znvygb:fhccbeg\100vaghvgvirfbhc\056pbz\">fhccbeg\100vaghvgvirfbhc\056pbz<\057n>".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
 	</script> for any help.
-			</p>
-			<p>
 				Please see <a href="./privacy.html">our privacy policy</a>.
 			</p>
 		</div>
+
+		<!-- macOS gallery -->
 		<div class="gallery-full">
 			<img id="gallery-1" src="http://files.intuitivesoup.com/startych/screenshots/v1-6/full/1.jpg" width="800" alt="StarTych adding a white border to a single image" style="display:inline;" />
 			<img id="gallery-2" src="http://files.intuitivesoup.com/startych/screenshots/v1-6/full/2.jpg" width="800" alt="StarTych's drag-and-drop interface'" style="display:none;" />
 			<img id="gallery-3" src="http://files.intuitivesoup.com/startych/screenshots/v1-6/full/3.jpg" width="800" alt="Full screen view of StarTych with two images bordered by blue" style="display:none;" />
 		</div>
 		<div class="gallery-picker">
-			<a href="#gallery-1" onclick="changeBigImage(1)" class="screenshot-selector">
-				<img id="gallery-select-1" class="gallery-small selected" src="http://files.intuitivesoup.com/startych/screenshots/v1-6/thumb/1.png" width="140" alt="Thumbnail for screenshot of StarTych 1" />
+			<a href="#gallery-1" onclick="changeBigImage(1, false)" class="screenshot-selector">
+				<img id="gallery-select-1" class="gallery-small selected" src="http://files.intuitivesoup.com/startych/screenshots/v1-6/thumb/1.png" width="140" alt="Thumbnail for screenshot of StarTych for macOS 1" />
 			</a>                                                                           
-			<a href="#gallery-2" onclick="changeBigImage(2)" class="screenshot-selector">                                                                   
-				<img id="gallery-select-2" class="gallery-small not-selected" src="http://files.intuitivesoup.com/startych/screenshots/v1-6/thumb/2.png" width="140" alt="Thumbnail for screenshot of StarTych 2" />
+			<a href="#gallery-2" onclick="changeBigImage(2, false)" class="screenshot-selector">                                                                   
+				<img id="gallery-select-2" class="gallery-small not-selected" src="http://files.intuitivesoup.com/startych/screenshots/v1-6/thumb/2.png" width="140" alt="Thumbnail for screenshot of StarTych for macOS 2" />
 			</a>                                                                           
-			<a href="#gallery-3" onclick="changeBigImage(3)" class="screenshot-selector">                                                                   
-				<img id="gallery-select-3" class="gallery-small not-selected" src="http://files.intuitivesoup.com/startych/screenshots/v1-6/thumb/3.png" width="140" alt="Thumbnail for screenshot of StarTych 3" />
+			<a href="#gallery-3" onclick="changeBigImage(3, false)" class="screenshot-selector">                                                                   
+				<img id="gallery-select-3" class="gallery-small not-selected" src="http://files.intuitivesoup.com/startych/screenshots/v1-6/thumb/3.png" width="140" alt="Thumbnail for screenshot of StarTych for macOS 3" />
 			</a>
 		</div>
+
+		<!-- iOS gallery -->
+		<div class="gallery-ios">
+			<div class="gallery-full-ios">
+				<img id="gallery-ios-1" src="http://files.intuitivesoup.com/startych/screenshots/ios-v1-0/full/1.jpg" height="896" alt="StarTych adding a white border to a single image" style="display:inline;" />
+				<img id="gallery-ios-2" src="http://files.intuitivesoup.com/startych/screenshots/ios-v1-0/full/2.jpg" height="896" alt="StarTych's cropping interface" style="display:none;" />
+				<img id="gallery-ios-3" src="http://files.intuitivesoup.com/startych/screenshots/ios-v1-0/full/3.jpg" height="896" alt="StarTych's border color interface" style="display:none;" />
+			</div>
+			<div class="gallery-picker-ios">
+				<a href="#gallery-1" onclick="changeBigImage(1, true)" class="screenshot-selector">
+					<img id="gallery-ios-select-1" class="gallery-small selected" src="http://files.intuitivesoup.com/startych/screenshots/ios-v1-0/thumb/1.png" height="140" alt="Thumbnail for screenshot of StarTych for iOS 1" />
+				</a>                                                                           
+				<a href="#gallery-2" onclick="changeBigImage(2, true)" class="screenshot-selector">                                                                   
+					<img id="gallery-ios-select-2" class="gallery-small not-selected" src="http://files.intuitivesoup.com/startych/screenshots/ios-v1-0/thumb/2.png" height="140" alt="Thumbnail for screenshot of StarTych for iOS 2" />
+				</a>                                                                           
+				<a href="#gallery-3" onclick="changeBigImage(3, true)" class="screenshot-selector">                                                                   
+					<img id="gallery-ios-select-3" class="gallery-small not-selected" src="http://files.intuitivesoup.com/startych/screenshots/ios-v1-0/thumb/3.png" height="140" alt="Thumbnail for screenshot of StarTych for iOS 3" />
+				</a>
+			</div>
+		</div>
+
 		<div id="footer">
 			<p>
 				&copy; 2011-2020 Jonathan Lynch.

@@ -34,12 +34,34 @@ a.screenshot-selector:hover {
 	text-decoration: none;
 }
 .gallery-full {
+	margin: 0 auto;
 	margin-top: 10px;
+	text-align: center;
 }
 .gallery-picker {
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 10px;
 	text-align: center;
+}
+.gallery-ios {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 24px;
+}
+.gallery-full-ios {
+	display: flex;
+	margin: 0;
+	margin-right: 12px;
+}
+.gallery-picker-ios {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	margin-left: 12px;
+}
+.gallery-picker-ios img {
+	display: flex;
 }
 img {
 	-webkit-border-radius: 4px;
@@ -47,7 +69,7 @@ img {
 	border-radius: 4px;
 }
 img.gallery-small {
-	margin: 0px 0px;
+	margin: 0;
 }
 .selected {
 	padding: 0;
